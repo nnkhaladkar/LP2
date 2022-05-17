@@ -1,0 +1,32 @@
+public class calculator {
+    public double a{get;set;}
+    public double b{get;set;}
+    public double result{get;set;}
+    public String output{get;set;}
+    
+    public calculator(){
+        
+    }
+    
+    public void add(){
+        result = a + b;
+        output = String.valueOf(result);
+    }
+    public void sub(){
+        result = a - b;
+        output = String.valueOf(result);
+    }
+    public void mul(){
+        result = a * b;
+        output = String.valueOf(result);
+    }
+    public void div(){
+        if (b == 0){
+            output = 'Not Defined';
+        }
+        else{
+            result = a / b;
+            output = String.valueOf(result);
+        }
+    }
+}
